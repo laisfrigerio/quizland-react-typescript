@@ -3,8 +3,6 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import { ToggleTheme } from '../../src/ui/ToggleTheme';
 
-import 'jest-styled-components';
-
 const theme = {
   colors: {
     themeText: '#000',

@@ -27,6 +27,13 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      "@components": path.resolve(__dirname, "src/components"),
+      "@icons": path.resolve(__dirname, "src/icons"),
+      "@ui": path.resolve(__dirname, "src/ui"),
+      "@screens": path.resolve(__dirname, "src/screens"),
+      "@styles": path.resolve(__dirname, "src/styles"),
+    },
     extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
@@ -39,5 +46,6 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
+    historyApiFallback: true, // Redireciona todas as requisições para o index.html
   },
 };

@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { ToggleTheme } from './ui/ToggleTheme';
+import { AppRoutes } from './routes';
 
-import { GlobalStyle } from './styles/global';
-import { themes } from './styles/theme';
+import { Header } from '@ui/Header';
+import { ToggleTheme } from '@ui/ToggleTheme';
+
+import { GlobalStyle } from '@styles/global';
+import { themes } from '@styles/theme';
 
 const App: React.FC = () => {
   const [currentTheme, setCurrentTheme] = useState(() => {
@@ -23,6 +26,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Header />
       <ToggleTheme
         onChange={toggleTheme}
         currentTheme={currentTheme}
@@ -30,7 +34,7 @@ const App: React.FC = () => {
         id="toggleTheme"
         value="theme"
       />
-      <h1>Hello, React + TypeScript!</h1>
+      <AppRoutes />
     </ThemeProvider>
   );
 };

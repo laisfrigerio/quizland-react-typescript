@@ -1,7 +1,15 @@
 import styled, { keyframes } from 'styled-components';
 
-import { SunIcon } from '../../icons/Sun';
-import { MoonIcon } from '../../icons/Moon';
+import { SunIcon } from '@icons/Sun';
+import { MoonIcon } from '@icons/Moon';
+
+interface IToggleTheme {
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+  id: string
+  value: string
+  checked: boolean
+  currentTheme: string
+};
 
 const SlideOn = keyframes`
   0% {
@@ -30,7 +38,7 @@ const SlideOff = keyframes`
 const ToggleLabel = styled.label`
   font-size: 16px;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.themeText};
+  color: ${({ theme }) => theme.colors.white};
   display: flex;
   align-items: center;
   position: absolute;
@@ -86,15 +94,7 @@ const Ball = styled.span`
   }
 `;
 
-interface ToggleThemeProps {
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
-  id: string
-  value: string
-  checked: boolean
-  currentTheme: string
-};
-
-function ToggleTheme({ onChange, id, value, checked, currentTheme}: ToggleThemeProps) {
+function ToggleTheme({ onChange, id, value, checked, currentTheme}: IToggleTheme) {
   return (
     <ToggleLabel htmlFor={id}>
       Theme:
