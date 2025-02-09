@@ -4,7 +4,6 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 import { createMemoryHistory } from 'history';
 
 import { HomeScreen } from '@screens/Home';
-
 import { themes } from '@styles/theme';
 
 const renderWithTheme = (children: React.ReactElement) => {

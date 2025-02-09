@@ -29,6 +29,7 @@ module.exports = {
   resolve: {
     alias: {
       "@components": path.resolve(__dirname, "src/components"),
+      "@context": path.resolve(__dirname, "src/context"),
       "@icons": path.resolve(__dirname, "src/icons"),
       "@ui": path.resolve(__dirname, "src/ui"),
       "@screens": path.resolve(__dirname, "src/screens"),
@@ -39,6 +40,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
+      inject: 'body',
     }),
   ],
   devServer: {

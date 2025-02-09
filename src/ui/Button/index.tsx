@@ -16,8 +16,14 @@ const ButtonContainer = styled.button`
   padding: 12px 24px;
 
   &.primary {
-    background-color: ${({ theme }) => theme.colors.primaryColor};
-    color: ${({ theme }) => theme.colors.primaryColorTextButton};
+    background-color: ${({ theme }) => theme.colors.buttonPrimaryBg};
+    color: ${({ theme }) => theme.colors.buttonPrimaryColorText};
+  }
+
+  &.primary-invert {
+    background-color: ${({ theme }) => theme.colors.buttonPrimaryInvertBg};
+    color: ${({ theme }) => theme.colors.buttonPrimaryInvertColorText};
+    border: 1px solid ${({ theme }) => theme.colors.buttonPrimaryInvertColorText};
   }
 
   &.secondary {

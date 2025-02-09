@@ -9,7 +9,7 @@ interface IRadioButton {
 };
 
 const Label = styled.label`
-  border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+  border: 1px solid ${({ theme }) => theme.colors.radioButtonBorder};
   border-radius: 4px;
   cursor: pointer;
   display: block;
@@ -30,7 +30,7 @@ const Label = styled.label`
     top: 0;
 
     .radio-inner__radio {
-      background-color: ${({ theme }) => theme.colors.gray200};
+      background-color: ${({ theme }) => theme.colors.radioButtonCircleBg};
       border-radius: 50%;
       height: 30px;
       width: 30px;
@@ -50,7 +50,7 @@ const Label = styled.label`
   }
 
   .radio-button__input:checked ~ .radio-inner .radio-inner__flex .radio-inner__radio {
-    background-color: ${({ theme }) => theme.colors.primaryColor};
+    background-color:  ${({ theme }) => theme.colors.secondaryColor};
   }
 
   .radio-button__input:checked ~ .radio-inner__radio:after {

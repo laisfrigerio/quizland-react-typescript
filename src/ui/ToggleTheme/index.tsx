@@ -38,7 +38,7 @@ const SlideOff = keyframes`
 const ToggleLabel = styled.label`
   font-size: 16px;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.primaryText};
   display: flex;
   align-items: center;
   position: absolute;

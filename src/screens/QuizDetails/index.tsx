@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { QuizLand, QuizConfigDTO } from 'quizland-core';
 
+import { useQuiz } from '@context/QuizManagement';
 import { Quiz } from '@components/Quiz';
 import { Question } from '@components/Question';
 
-function QuizDetailsScreen() {
+function QuizDetailsScreen({ onNavigateToResult }: any) {
+  const { manager, setManager } = useQuiz();
+
   const mockData: QuizConfigDTO = {
     "title": "General Knowledge Quiz",
     "category": "General",
@@ -31,15 +34,14 @@ function QuizDetailsScreen() {
         "correctAnswerIds": [2]
       },
       {
-        "content": "Which of the following are the advantages of using the AWS Cloud? (Select TWO)",
+        "content": "A growing start-up has trouble identifying and protecting sensitive data at scale. Which AWS fully managed service can assist with this task?",
         "options": [
-          { "id": 1, "content": "Limited scaling" },
-          { "id": 2, "content": "AWS is responsible for security in the cloud" },
-          { "id": 3, "content": "Increase speed and agility"},
-          { "id": 4, "content": "Trade operational expense for capital expense" },
-          { "id": 5, "content": "Stop guessing about capacity"}
+          { "id": 1, "content": "AWS Key Management Service (AWS KMS)" },
+          { "id": 2, "content": "Amazon Macie " },
+          { "id": 3, "content": "AWS Secrets Manager"},
+          { "id": 4, "content": "AWS Artifact" },
         ],
-        "correctAnswerIds": [3,5]
+        "correctAnswerIds": [2]
       }
     ],
     "tryAgain": false,
@@ -48,7 +50,13 @@ function QuizDetailsScreen() {
     "level": "easy"
   };
 
-  const [manager, _] = useState(QuizLand(mockData));
+  useEffect(() => {
+    setManager(QuizLand(mockData));
+  }, [setManager]);
+
+  if (!manager) {
+    return null;
+  }
 
   return (
     <Quiz>
