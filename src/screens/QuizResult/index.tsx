@@ -1,10 +1,15 @@
 import { useEffect } from 'react';
-import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-import { QuizManager } from 'quizland-core/lib/quiz-manager';
+import { Doughnut } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import styled, { useTheme} from 'styled-components';
 
+import { AccordionList } from '@components/Result/Accordion';
 import { useQuiz } from '@context/QuizManagement';
 import { Button } from '@ui/Button';
+import { Question } from 'quizland-core';
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const ResultContainer = styled.section`
   display: flex;
@@ -15,6 +20,8 @@ const ResultContainer = styled.section`
   padding: 24px;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.themeText};
+  max-width: 768px;
+  margin: 0 auto;
 `;
 
 const Title = styled.h1`
@@ -22,17 +29,16 @@ const Title = styled.h1`
   margin-bottom: 16px;
 `;
 
-const ResultDetails = styled.div`
-  font-size: 18px;
-  margin-bottom: 24px;
-`;
-
-const ResultItem = styled.p`
-  margin: 8px 0;
+const ChartContainer = styled.div`
+  width: 100%;
+  max-width: 768px; 
+  margin: 30px auto;
+  height: 250px;
 `;
 
 function QuizResultScreen() {
   const { manager } = useQuiz();
+  const theme = useTheme();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -45,24 +51,56 @@ function QuizResultScreen() {
     return null;
   }
 
-  const quizTitle = manager.getConfig().title;
   const totalQuestions = manager.getConfig().questions.length; 
   const correctAnswers = manager.getScore();
   const incorrectAnswers = totalQuestions - correctAnswers;
+
+  const data = {
+    labels: ['Acertos', 'Erros'],
+    datasets: [
+      {
+        data: [correctAnswers, incorrectAnswers],
+        borderWidth: 0,
+        backgroundColor: [
+          theme.colors.secondaryColor,
+          '#ec8e97',
+        ]
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+  };
 
   const handleStartQuiz = () => {
     navigate('/quiz');
   };
 
+  function transformQuestionsToIndexedObject(questions: Question[]) {
+    return questions.reduce((acc: { [key: string]: Question }, question) => {
+      acc[question.id] = question;
+      return acc;
+    }, {});
+  }
+
+  const answerStateQuestionIds = Array.from(manager.getAnswerState().keys());
+  const indexedQuestions = transformQuestionsToIndexedObject(manager.getConfig().questions);
+
+  console.log('AnswerStatse', answerStateQuestionIds);
+
   return (
     <ResultContainer>
-      <Title>Resultado do Quiz</Title>
-      <ResultDetails>
-        <ResultItem><strong>Questionário:</strong> {quizTitle}</ResultItem>
-        <ResultItem><strong>Total de Perguntas:</strong> {totalQuestions}</ResultItem>
-        <ResultItem><strong>Acertos:</strong> {correctAnswers}</ResultItem>
-        <ResultItem><strong>Erros:</strong> {incorrectAnswers}</ResultItem>
-      </ResultDetails>
+      <Title>Resultado</Title>
+      <ChartContainer>
+        <Doughnut data={data} options={options} />
+      </ChartContainer>
+
+      <AccordionList
+        manager={manager}
+      />
+
       <Button
         label="Iniciar Novo Quiz"
         className="secondary"

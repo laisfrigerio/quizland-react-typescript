@@ -17,7 +17,7 @@ export const themes: Record<string, DefaultTheme> = {
       dark: '#282526',
       headerBg: '#1c1d1f',
       headerBoxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
-      headerBorderColor: 'red',
+      headerBorderColor: '#ececed',
       progressBarBg: '#f7f9fa',
       progressBarTimerBg: '#d1d7dc',
       progressBarBoxShadow: '0',
@@ -29,6 +29,28 @@ export const themes: Record<string, DefaultTheme> = {
       gray200: '#eeeeee',
       gray300: '#d1d7dc',
       gray450: '#cccccc',
+      result: {
+        defaultOptionBg: '#f7f9fa',
+        defaultOptionBorder: '#d1d7dc',
+
+        correctOptionBg: '#e3fae4',
+        correctOptionText: '#e5ffe6',
+        correctOptionBorder: '#4caf50',
+        correctBadgeBg: '#4caf50',
+        correctBadgeColor: '#e5ffe6',
+
+        incorrectOptionBg: '#ffdcdc',
+        incorrectOptionText: '#fff2f2',
+        incorrectOptionBorder: 'red',
+        incorrectBadgeBg: '#f44336',
+        incorrectBadgeText: '#fff2f2',
+
+        correctNotSelectedOptionBg: '#fff9ed',
+        correctNotSelectedOptionBorder: 'orange',
+        correctNotSelectedOptionText: '#11052C',
+        correctNotSelectedBadgeBg: 'orange',
+        correctNotSelectedBadgeText: '#fff9ed',
+      },
     },
     fonts: {
       anekMalayalam: 'Anek Malayalam',
@@ -58,6 +80,27 @@ export const themes: Record<string, DefaultTheme> = {
       gray450: '#cccccc',
       svgIconBg: '#FFFFFF',
       svgIconFill: '#282526',
+      result: {
+        defaultOptionBg: '#252122',
+        defaultOptionBorder: '#383838',
+        correctOptionBg: '#2b6e6233',
+        correctOptionBorder: '#455654',
+        correctOptionText: '#e5ffe6',
+        correctBadgeBg: '#455654',
+        correctBadgeColor: '#e5ffe6',
+
+        incorrectOptionBg: '#582521',
+        incorrectOptionBorder: '#804c48',
+        incorrectOptionText: '#fff2f2',
+        incorrectBadgeBg: '#814c49',
+        incorrectBadgeText: '#fff2f2',
+
+        correctNotSelectedOptionBg: '#b6570033',
+        correctNotSelectedOptionText: '#ffebd8',
+        correctNotSelectedOptionBorder: '#765334',
+        correctNotSelectedBadgeBg: '#db7d27',
+        correctNotSelectedBadgeText: '#fff9ed'
+      },
     },
     fonts: {
       anekMalayalam: 'Anek Malayalam',
