@@ -16,6 +16,18 @@ The main idea of this open-source project is to share AWS Cloud Practitioner que
   <a><img src="./screenshots/question-dark-mode.png" alt="Uma pergunta de um quiz com 4 opções de resposta sobre a certificação AWS Cloud Practitioner utilizando uma tema escuro com fundo preto, texto branco e uma cor secundária em azul mar." title="Uma pergunta de um quiz com 4 opções de resposta sobre a certificação AWS Cloud Practitioner utilizando uma tema escuro com fundo preto, texto branco e uma cor secundária em azul mar."></a>
 </p>
 
+## Result Screen
+
+<p align="center">
+  <a><img src="./screenshots/result-screen.png" alt="Tela com o resultado final após responder o quiz. No topo ao centro tem um gráfico pizza indicando a porcentagem de respostas corretas e erradas. Abaixo, uma lista com as perguntas e respectivas respostas e opções selecionadas."></a>
+</p>
+
+## Result Screen with Details
+
+<p align="center">
+  <a><img src="./screenshots/result-screen-details.png" alt="Tela com o resultado final após responder o quiz. No topo ao centro tem um gráfico pizza indicando a porcentagem de respostas corretas e erradas. Abaixo, uma lista com as perguntas e respectivas respostas, exibindo as opções de respostas com indicação das respostas corretas e selecionadas incorretamenta."></a>
+</p>
+
 ## Stack
 
 - React 19
