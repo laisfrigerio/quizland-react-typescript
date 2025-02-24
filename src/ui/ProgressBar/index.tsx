@@ -10,6 +10,8 @@ interface IProgressBar {
   timer?: string;
 };
 
+const MAX_PROGRESS = 99;
+
 const ProgressBarContainer = styled.section`
   align-items: center;
   background-color: ${({ theme }) => theme.colors.progressBarBg};
@@ -25,7 +27,7 @@ const ProgressBarContainer = styled.section`
   width: 100%;
 `;
 
-const TimerProgressContainer = styled.div`
+const TimerProgressContainer = styled.div<{ progress: number }>`
   background-color: ${({ theme }) => theme.colors.progressBarTimerBg};
   border-radius: 8px;
   height: 10px;
@@ -38,15 +40,22 @@ const TimerProgressContainer = styled.div`
     content: "";
     height: inherit;
     position: absolute;
-    width: 60%;
+    width: ${({ progress }) => progress}%;
   }
 `;
 
 function ProgressBar({ counter, timer }: IProgressBar) {
+  const progress = () => {
+    if (counter.currentCounter === counter.totalCounter) {
+      return MAX_PROGRESS;
+    }
+    return (counter.currentCounter / counter.totalCounter) * 100;
+  };
+
   return (
     <ProgressBarContainer>
       <div className='timer-counter'>{counter.currentCounter}/{counter.totalCounter}</div>
-      <TimerProgressContainer />
+      <TimerProgressContainer data-testid='progress-bar' progress={progress()} />
       {timer && <div className='timer-timer'>
         <span className='timer-clock'></span>
         {timer}
@@ -55,4 +64,4 @@ function ProgressBar({ counter, timer }: IProgressBar) {
   );
 };
 
-export { ProgressBar };
+export { MAX_PROGRESS, ProgressBar };
