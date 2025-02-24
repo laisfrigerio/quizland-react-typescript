@@ -24,6 +24,8 @@ function Form({ manager, selectedIds, setSelectedIds }: IQuestionForm) {
     <FormContainer>
       <Title questionNumber={manager.getCurrentQuestionIndex() + 1} title={title} />
       <Answers
+        answerState={manager.getAnswerState()}
+        currentQuestion={currentQuestion}
         options={options}
         selectedIds={selectedIds}
         setSelectedIds={setSelectedIds}
