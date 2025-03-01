@@ -4,6 +4,7 @@ export default {
   moduleNameMapper: {
     '\\.(css|scss|sass)$': 'identity-obj-proxy', // Mapeia arquivos de estilo para evitar erros
     "^@components/(.*)$": "<rootDir>/src/components/$1",
+    "^@data/(.*)$": "<rootDir>/src/data/$1",
     "^@ui/(.*)$": "<rootDir>/src/ui/$1",
     "^@icons/(.*)$": "<rootDir>/src/icons/$1",
     "^@screens/(.*)$": "<rootDir>/src/screens/$1",

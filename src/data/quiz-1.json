@@ -1,0 +1,396 @@
+{
+  "title": "General Knowledge Quiz",
+  "category": "General",
+  "mode": "training",
+  "questions": [
+    {
+      "content": "Qual dos seguintes serviços AWS fornece a capacidade de hospedar um banco de dados NoSQL na Nuvem AWS?",
+      "options": [
+        { "id": 1, "content": "Amazon Aurora" },
+        { "id": 2, "content": "Amazon DynamoDb" },
+        { "id": 3, "content": "Amazon RDS" },
+        { "id": 4, "content": "Amazon Redshift" }
+      ],
+      "answerDetails": "Amazon DynamoDb é um serviço da AWS que fornece a capacidade de hospedar um banco de dados NoSQL na Nuvem AWS.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Qual serviço da AWS utiliza uma combinação de publishers e assinantes?",
+      "options": [
+        { "id": 1, "content": "AWS Lambda" },
+        { "id": 2, "content": "AWS CloudWatch" },
+        { "id": 3, "content": "AWS CloudFormation" },
+        { "id": 4, "content": "Amazon Simple Notification Service (Amazon SNS)" }
+      ],
+      "answerDetails": "O Amazon Simple Notification Service (Amazon SNS) é um serviço que oferece mensagens pub/sub totalmente gerenciadas. A mensageira pub/sub é um padrão que utiliza uma combinação de publicadores e assinantes.",
+      "correctAnswerIds": [4]
+    },
+    {
+      "content": "Uma empresa tem uma carga de trabalho de aplicativo que é projetada para ser sem estado e pode suportar interrupções ocasionais. O aplicativo realiza computações massivamente paralelas. Qual modelo de precificação de instâncias Amazon EC2 a empresa deve escolher para reduzir custos?",
+      "options": [
+        { "id": 1, "content": "Instâncias Sob Demandas" },
+        { "id": 2, "content": "Instâncias Spots" },
+        { "id": 3, "content": "Instâncias Reservadas" },
+        { "id": 4, "content": "Instâncias Dedicadas" }
+      ],
+      "answerDetails": "Instâncias Spots são instâncias Amazon EC2 que permitem que você compre capacidade de computação não utilizada a preços significativamente menores.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa planeja migrar para a nuvem AWS. A empresa está reunindo informações sobre sua infraestrutura local e requer informações como nome do host, endereço IP e endereço MAC. Qual serviço da AWS atende a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "AWS DataSync" },
+        { "id": 2, "content": "AWS Application Migration Service" },
+        { "id": 3, "content": "AWS Application Discovery Service" },
+        { "id": 4, "content": "AWS Database Migration Service (AWS DMS)" }
+      ],
+      "answerDetails": "O AWS Application Discovery Service é um serviço que ajuda a coletar informações sobre a infraestrutura local de uma empresa, como nome do host, endereço IP e endereço MAC.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Qual é a responsabilidade do cliente ao usar o AWS Lambda de acordo com o modelo de responsabilidade compartilhada da AWS?",
+      "options": [
+        { "id": 1, "content": "Gerenciar o código dentro da função Lambda" },
+        { "id": 2, "content": "Confirmar se o hardware está funcionando no data center" },
+        { "id": 3, "content": "Aplicar patches no sistema operacional" },
+        { "id": 4, "content": "Desligar funções Lambda quando não estiverem mais em uso" }
+      ],
+      "answerDetails": "Gerenciar o código dentro da função Lambda é uma responsabilidade do cliente ao usar o AWS Lambda de acordo com o modelo de responsabilidade compartilhada da AWS.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Uma empresa deseja que suas instâncias da Amazon EC2 operem em um ambiente altamente disponível, mesmo em caso de desastre natural em uma área geográfica específica. Qual solução atinge esse objetivo?",
+      "options": [
+        { "id": 1, "content": "Usar instâncias EC2 em uma única Zona de Disponibilidade" },
+        { "id": 2, "content": "Usar instâncias EC2 em múltiplas Regiões da AWS" },
+        { "id": 3, "content": "Usar instâncias EC2 em múltiplos locais de borda" },
+        { "id": 4, "content": "Usar Amazon CloudFront com as instâncias EC2 configuradas como a origem" }
+      ],
+      "answerDetails": "Usar instâncias EC2 em múltiplas Regiões da AWS é uma solução que atinge o objetivo de operar em um ambiente altamente disponível, mesmo em caso de desastre natural em uma área geográfica específica.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Qual serviço ou ferramenta da AWS pode ser usado para consolidar pagamentos de uma empresa com várias contas da AWS?",
+      "options": [
+        { "id": 1, "content": "AWS Cost and Usage Report" },
+        { "id": 2, "content": "AWS Organizations" },
+        { "id": 3, "content": "AWS Cost Explorer" },
+        { "id": 4, "content": "AWS Budgets" }
+      ],
+      "answerDetails": "AWS Organizations é um serviço que permite consolidar pagamentos de uma empresa com várias contas da AWS.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Qual das opções a seguir é uma proposta de valor da AWS que descreve a capacidade de um usuário de escalar a infraestrutura com base na demanda?",
+      "options": [
+        { "id": 1, "content": "Velocidade de inovação" },
+        { "id": 2, "content": "Arquitetura desacoplada" },
+        { "id": 3, "content": "Elasticidade de recursos" },
+        { "id": 4, "content": "Implantação global" }
+      ],
+      "answerDetails": "Elasticidade de recursos é uma proposta de valor da AWS que descreve a capacidade de um usuário de escalar a infraestrutura com base na demanda.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Qual serviço da AWS fornece armazenamento de objetos altamente durável?",
+      "options": [
+        { "id": 1, "content": "Amazon Elastic File System (Amazon EFS)" },
+        { "id": 2, "content": "Amazon Elastic Block Store (Amazon EBS)" },
+        { "id": 3, "content": "Amazon FSx" },
+        { "id": 4, "content": "Amazon Simple Storage Service (Amazon S3)" }
+      ],
+      "answerDetails": "Amazon Simple Storage Service (Amazon S3) é um serviço da AWS que fornece armazenamento de objetos altamente durável.",
+      "correctAnswerIds": [4]
+    },
+    {
+      "content": "Amazon Elastic File System (Amazon EFS) e o Amazon FSx oferecem qual tipo de armazenamento?",
+      "options": [
+        { "id": 1, "content": "Armazenamento de arquivo" },
+        { "id": 2, "content": "Armazenamento de objeto" },
+        { "id": 3, "content": "Armazenamento de bloco" },
+        { "id": 4, "content": "Armazenamento de instância" }
+      ],
+      "answerDetails": "Amazon Elastic File System (Amazon EFS) e o Amazon FSx oferecem armazenamento de arquivo.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Qual serviço de banco de dados da AWS fornece armazenamento de dados na memória?",
+      "options": [
+        { "id": 1, "content": "Amazon DynamoDb" },
+        { "id": 2, "content": "Amazon ElastiCache" },
+        { "id": 3, "content": "Amazon RDS" },
+        { "id": 4, "content": "Amazon Timestream" }
+      ],
+      "answerDetails": "Amazon ElastiCache é um serviço de banco de dados da AWS que fornece armazenamento de dados na memória.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa está lançando um novo aplicativo na nuvem AWS. O aplicativo será executado em uma instância da Amazon EC2. Mais instâncias EC2 serão necessárias quando a carga de trabalho aumentar. Qual serviço ou ferramenta AWS a empresa pode usar para lançar o número de instâncias EC2 necessárias para lidar com a carga de trabalho?",
+      "options": [
+        { "id": 1, "content": "AWS Load Balancer" },
+        { "id": 2, "content": "Auto Scaling do Amazon EC2" },
+        { "id": 3, "content": "AWS App2Container (A2C)" },
+        { "id": 4, "content": "AWS Systems Manager " }
+      ],
+      "answerDetails": "Auto Scaling do Amazon EC2 é um serviço que permite lançar o número de instâncias EC2 necessárias para lidar com a carga de trabalho.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa deseja migrar seu banco de dados PostgreSQL para AWS. A empresa não utiliza o banco de dados com frequência. Qual serviço ou recurso da AWS atenderá a esses requisitos com MENOS sobrecarga de gerenciamento?",
+      "options": [
+        { "id": 1, "content": "PostgreSQL com Amazon EC2" },
+        { "id": 2, "content": "Amazon Aurora PostgreSQL-Compatible Editiona" },
+        { "id": 3, "content": "Amazon Aurora Serverless" },
+        { "id": 4, "content": "Amazon RDS com PostgreSQL" }
+      ],
+      "answerDetails": "Amazon Aurora Serverless é uma opção sem servidor que permite que você pague apenas pelo que usar. Ele é ideal para cargas de trabalho intermitentes e imprevisíveis.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Uma empresa deseja criar painéis do Amazon QuickSight semanalmente usando seus dados de faturamento. Qual recurso ou ferramenta da AWS a empresa pode usar para atender a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "AWS Cost Explorer" },
+        { "id": 2, "content": "AWS Cost and Usage Report" },
+        { "id": 3, "content": "AWS Budgets" },
+        { "id": 4, "content": "AWS Cost Anomaly Detection" }
+      ],
+      "answerDetails": "O AWS Cost and Usage Report fornece informações detalhadas sobre seus custos e uso de serviços da AWS. Você pode usar essas informações para criar painéis personalizados no Amazon QuickSight.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa está planejando migrar backups de dados para a Nuvem AWS. A empresa precisa substituir o armazenamento local por armazenamento baseado em nuvem, mas armazenado em cache localmente. Qual serviço da AWS atende a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "Amazon Elastic File System (Amazon EFS)" },
+        { "id": 2, "content": "AWS Storage Gateway" },
+        { "id": 3, "content": "AWS Snowcone"},
+        { "id": 4, "content": "AWS Backup" }
+      ],
+      "answerDetails": "O AWS Storage Gateway é um serviço de armazenamento híbrido que permite que você armazene dados localmente e na nuvem. Ele fornece armazenamento em cache localmente para acesso rápido aos dados.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa possui uma frota de navios cargueiros. Os navios cargueiros possuem sensores que coletam dados no mar, onde há conectividade intermitente ou inexistente com a internet. A empresa precisa coletar, formatar e processar os dados no mar e movê-los posteriormente para a AWS. Qual serviço AWS a empresa deve usar para atender a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "Amazon Lightsail" },
+        { "id": 2, "content": "AWS Snowball Edge" },
+        { "id": 3, "content": "AWS Storage Gateway"},
+        { "id": 4, "content": "AWS IoT Core" }
+      ],
+      "answerDetails": "O AWS Snowball Edge é um dispositivo de armazenamento de dados físico que pode ser usado para coletar, processar e transferir dados para a AWS. Ele é ideal para ambientes com conectividade intermitente ou inexistente com a internet.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Quem permite a criptografia de dados em repouso para o Amazon Elastic Block Store (Amazon EBS)?",
+      "options": [
+        { "id": 1, "content": "AWS Trusted Advisor" },
+        { "id": 2, "content": "AWS customers" },
+        { "id": 3, "content": "AWS Key Management Service (AWS KMS)"},
+        { "id": 4, "content": "AWS Support" }
+      ],
+      "answerDetails": "O AWS Key Management Service (AWS KMS) permite a criptografia de dados em repouso para o Amazon Elastic Block Store (Amazon EBS).",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Qual serviço da AWS uma empresa pode usar para projetar e criar visualmente aplicativos sem servidor?",
+      "options": [
+        { "id": 1, "content": "AWS App Runner" },
+        { "id": 2, "content": "AWS Application Composer" },
+        { "id": 3, "content": "AWS Lambda"},
+        { "id": 4, "content": "AWS Batch" }
+      ],
+      "answerDetails": "O serviço AWS Application Composer permite, de maneira visual, criar um ambiente na nuvem com diversos serviços da AWS como se fossem peçinhas de lego. Você vai arrastando, soltando e encaixando as peçinhas para indicar a comunicação e fluxo entre os serviços.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa precisa de armazenamento de arquivos totalmente gerenciado, altamente confiável e escalável, acessível por meio do protocolo Server Message Block (SMB).Qual serviço da AWS atenderá a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "Amazon FSx for Windows File Server" },
+        { "id": 2, "content": "Amazon Elastic File System (Amazon EFS)" },
+        { "id": 3, "content": "Amazon S3"},
+        { "id": 4, "content": "Amazon Elastic Block Store (Amazon EBS)" }
+      ],
+      "answerDetails": "O Amazon FSx for Windows File Server é um serviço de armazenamento de arquivos totalmente gerenciado, altamente confiável e escalável, acessível por meio do protocolo Server Message Block (SMB).",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Uma empresa deseja estabelecer uma conexão de rede privada entre a AWS e sua rede corporativa.Qual serviço ou recurso da AWS atenderá a esse requisito?",
+      "options": [
+        { "id": 1, "content": "Amazon Connect" },
+        { "id": 2, "content": "Amazon Route 53" },
+        { "id": 3, "content": "Amazon Direct Connect"},
+        { "id": 4, "content": "VPC peering" }
+      ],
+      "answerDetails": "O Amazon Direct Connect é um serviço que permite estabelecer uma conexão de rede privada entre a AWS e sua rede corporativa.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Uma empresa de comércio eletrônico deseja usar o Amazon EC2 Auto Scaling para adicionar e remover instâncias do EC2 com base na utilização da CPU. Qual serviço ou recurso da AWS pode iniciar uma ação de Auto Scaling do Amazon EC2 para atingir essa meta?",
+      "options": [
+        { "id": 1, "content": "Alarme Amazon CloudWatch" },
+        { "id": 2, "content": "Amazon SQS (Simple Queue Service)" },
+        { "id": 3, "content": "Amazon SNS (Simple Notification Service)"},
+        { "id": 4, "content": "Gerenciador de sistemas AWS" }
+      ],
+      "answerDetails": "O Amazon CloudWatch é um serviço de monitoramento e observabilidade que fornece dados e insights sobre a utilização de recursos da AWS. Você pode usar o Amazon CloudWatch para criar alarmes que acionam ações de Auto Scaling do Amazon EC2 com base na utilização da CPU.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Uma empresa deseja migrar seus bancos de dados locais para serviços gerenciados de banco de dados em nuvem usando um processo de migração simplificado. Qual serviço ou ferramenta da AWS pode ajudar a empresa a atender a esse requisito?",
+      "options": [
+        { "id": 1, "content": "AWS DataSync" },
+        { "id": 2, "content": "AWS Database Migration Service (AWS DMS)" },
+        { "id": 3, "content": "AWS Application Migration Service"},
+        { "id": 4, "content": "AWS Storage Gateway" }
+      ],
+      "answerDetails": "O AWS Database Migration Service (AWS DMS) é um serviço que ajuda a migrar bancos de dados locais para serviços gerenciados de banco de dados em nuvem usando um processo de migração simplificado.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma equipe de desenvolvimento deseja implantar vários ambientes de teste para um aplicativo de maneira rápida e repetível. Qual serviço AWS a equipe deve usar?",
+      "options": [
+        { "id": 1, "content": "EC2 (Elastic Compute Cloud)" },
+        { "id": 2, "content": "ECS (Elastic Container Service)" },
+        { "id": 3, "content": "AWS CloudFormation"},
+        { "id": 4, "content": "Amazon QuickSight" }
+      ],
+      "answerDetails": "O AWS CloudFormation é um serviço que permite criar e gerenciar recursos da AWS de maneira rápida e repetível. Você pode usar o AWS CloudFormation para criar ambientes de teste para um aplicativo de maneira rápida e repetível.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Uma empresa precisa implantar aplicativos na Nuvem AWS o mais rápido possível. A empresa também precisa minimizar a complexidade relacionada ao gerenciamento dos recursos da AWS. Qual serviço AWS a empresa deve usar para atender a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "Amazon Personalize" },
+        { "id": 2, "content": "AWS Config"},
+        { "id": 3, "content": "EC2 (Elastic Compute Cloud)"},
+        { "id": 4, "content": "AWS Elastic Beanstalk" }
+      ],
+      "answerDetails": "O AWS Elastic Beanstalk é um serviço que facilita a implantação de aplicativos na Nuvem AWS. Ele minimiza a complexidade relacionada ao gerenciamento dos recursos da AWS.",
+      "correctAnswerIds": [4]
+    },
+    {
+      "content": "Um usuário precisa de um banco de dados relacional, mas não possui recursos para gerenciar o hardware, a resiliência e a replicação. Qual opção de serviço da AWS atende aos requisitos do usuário?",
+      "options": [
+        { "id": 1, "content": "Execute o MySQL no EC2" },
+        { "id": 2, "content": "Escolha Amazon ElastiCache para Redis"},
+        { "id": 3, "content": "Escolha Amazon RDS para MySQL"},
+        { "id": 4, "content": "Execute o MySQL no Amazon Elastic Container Service (Amazon ECS)."}
+      ],
+      "answerDetails": "O Amazon RDS para MySQL é um serviço gerenciado de banco de dados relacional que gerencia o hardware, a resiliência e a replicação para você.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Uma empresa deseja executar suas cargas de trabalho na Nuvem AWS de maneira eficaz, reduzir a sobrecarga de gerenciamento e melhorar os processos. Qual pilar do AWS Well-Architected Framework representa esses requisitos?",
+      "options": [
+        { "id": 1, "content": "Confiabilidade" },
+        { "id": 2, "content": "Excelência Operacional"},
+        { "id": 3, "content": "Otimização de custos"},
+        { "id": 4, "content": "Eficiência de desempenho"}
+      ],
+      "answerDetails": "O pilar de Excelência Operacional do AWS Well-Architected Framework representa a execução eficaz de cargas de trabalho na Nuvem AWS, a redução da sobrecarga de gerenciamento e a melhoria dos processos.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Um desenvolvedor deseja que os usuários da AWS acessem os serviços da AWS usando credenciais de segurança temporárias. Qual serviço ou recurso da AWS o desenvolvedor deve usar para fornecer essas credenciais?",
+      "options": [
+        { "id": 1, "content": "AWS IAM Identity Center (logon único da AWS)" },
+        { "id": 2, "content": "Serviço de token de segurança da AWS (AWS STS)"},
+        { "id": 3, "content": "Políticas do IAM"},
+        { "id": 4, "content": "Grupos de usuários do IAM"}
+      ],
+      "answerDetails": "O Serviço de token de segurança da AWS (AWS STS) é um serviço que fornece credenciais de segurança temporárias para usuários da AWS.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa deseja armazenamento durável para conteúdo estático e infraestrutura de armazenamento de dados infinitamente escalável com o menor custo. Qual serviço AWS a empresa deve escolher?",
+      "options": [
+        { "id": 1, "content": "Amazon EBS (Elastic Block Store)" },
+        { "id": 2, "content": "AWS Storage Gateway)"},
+        { "id": 3, "content": "Amazon EFS (Elastic File System)"},
+        { "id": 4, "content": "Amazon S3 (Simple Storage Service)" }
+      ],
+      "answerDetails": "O Amazon S3 (Simple Storage Service) é um serviço de armazenamento de objetos durável e escalável que oferece armazenamento de conteúdo estático e infraestrutura de armazenamento de dados infinitamente escalável com o menor custo.",
+      "correctAnswerIds": [4]
+    },
+    {
+      "content": "Uma empresa está migrando para a Nuvem AWS e planeja executar cargas de trabalho experimentais por 3 a 6 meses na AWS. Qual modelo de precificação atenderá a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "Usar hosts dedicados" },
+        { "id": 2, "content": "Usar instâncias reservadas"},
+        { "id": 3, "content": "Usar instâncias sob demanda"},
+        { "id": 4, "content": "Utilizar Savings Plans por um período de 3 anos" }
+      ],
+      "answerDetails": "Usar instâncias sob demanda é o modelo de precificação ideal para cargas de trabalho experimentais que duram de 3 a 6 meses.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Qual serviço da AWS permite que os usuários baixem relatórios de segurança e conformidade sobre a infraestrutura da AWS sob demanda?",
+      "options": [
+        { "id": 1, "content": "AWS Shield" },
+        { "id": 2, "content": "AWS Artifact"},
+        { "id": 3, "content": "Amazon GuardDuty"},
+        { "id": 4, "content": "AWS Security Hub" }
+      ],
+      "answerDetails": "O AWS Artifact é um serviço que permite que os usuários baixem relatórios de segurança e conformidade sobre a infraestrutura da AWS sob demanda.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Qual é o serviço de data warehouse da Amazon utilizado pelas áreas de BI, que permite o cruzamento de vários dados estruturado e semi estruturados para gerar conhecimento para o negócio?",
+      "options": [
+        { "id": 1, "content": "Amazon SageMaker" },
+        { "id": 2, "content": "Amazon MR"},
+        { "id": 3, "content": "Amazon Redshift"},
+        { "id": 4, "content": "Amazon Kinesis" }
+      ],
+      "answerDetails": "O Amazon Redshift é um serviço de data warehouse da Amazon utilizado pelas áreas de BI, que permite o cruzamento de vários dados estruturado e semi estruturados para gerar conhecimento para o negócio.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Qual é o serviço de integração, totalmente gerenciado pela AWS, que permite transferir dados com segurança entre aplicativos de Software como Serviço (SaaS) como: Salesforce, Zendesk, Slack e ServiceNow, Amazon S3 e Amazon Redshift?",
+      "options": [
+        { "id": 1, "content": "Amazon EventBridge" },
+        { "id": 2, "content": "AWS Database Migration Service (AWS DMS)"},
+        { "id": 3, "content": "Amazon Simple Notification Service (Amazon SNS)"},
+        { "id": 4, "content": "Amazon AppFlow" }
+      ],
+      "answerDetails": "O Amazon AppFlow é um serviço de integração, totalmente gerenciado pela AWS, que permite transferir dados com segurança entre aplicativos de Software como Serviço (SaaS) como: Salesforce, Zendesk, Slack e ServiceNow, Amazon S3 e Amazon Redshift.",
+      "correctAnswerIds": [4]
+    },
+    {
+      "content": "Qual serviço ou ferramenta da AWS monitorará os recursos e aplicativos da AWS em tempo real?",
+      "options": [
+        { "id": 1, "content": "Amazon CloudWatch" },
+        { "id": 2, "content": "AWS Trusted Advisor"},
+        { "id": 3, "content": "AWS CloudTrail"},
+        { "id": 4, "content": "AWS DataSync" }
+      ],
+      "answerDetails": "O Amazon CloudWatch é um serviço que monitora os recursos e aplicativos da AWS em tempo real.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Uma empresa criou uma instância do Amazon EC2. A empresa deseja controlar o tráfego de rede de entrada e saída no nível da instância. Qual recurso ou serviço da AWS atenderá a esse requisito?",
+      "options": [
+        { "id": 1, "content": "Grupos de segurança (Security Groups)" },
+        { "id": 2, "content": "VPC Endpoints"},
+        { "id": 3, "content": "AWS Shield"},
+        { "id": 4, "content": "Network Access Control List (NACL)" }
+      ],
+      "answerDetails": "Os Grupos de segurança (Security Groups) são usados para controlar o tráfego de rede de entrada e saída no nível da instância.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Qual é o serviço da AWS que permite selecionar uma imagem de uma máquina pré-configurada para lançar uma instâncias EC2?",
+      "options": [
+        { "id": 1, "content": "AWS Compute Optimizer" },
+        { "id": 2, "content": "AWS Service Catalog"},
+        { "id": 3, "content": "Amazon AMI"},
+        { "id": 4, "content": "AWS IAM" }
+      ],
+      "answerDetails": "Amazon AMI é o serviço da AWS que permite selecionar uma imagem de uma máquina pré-configurada para lançar uma instâncias EC2.",
+      "correctAnswerIds": [3]
+    }
+  ],
+  "tryAgain": false,
+  "showTimer": true,
+  "showScore": false,
+  "level": "easy"
+}

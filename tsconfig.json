@@ -6,14 +6,16 @@
     "moduleResolution": "Node",
     "jsx": "react-jsx",
     "strict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["jest", "@testing-library/jest-dom"], // Adiciona suporte a Jest
     "baseUrl": "./",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "paths": {
       "@components/*": ["src/components/*"],
       "@context/*": ["src/context/*"],
+      "@data/*": ["src/data/*"],
       "@icons/*": ["src/icons/*"],
       "@screens/*": ["src/screens/*"],
       "@styles/*": ["src/styles/*"],
