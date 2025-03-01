@@ -27,11 +27,21 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      "@components": path.resolve(__dirname, "src/components"),
+      "@context": path.resolve(__dirname, "src/context"),
+      "@data": path.resolve(__dirname, "src/data"),
+      "@icons": path.resolve(__dirname, "src/icons"),
+      "@ui": path.resolve(__dirname, "src/ui"),
+      "@screens": path.resolve(__dirname, "src/screens"),
+      "@styles": path.resolve(__dirname, "src/styles"),
+    },
     extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
+      inject: 'body',
     }),
   ],
   devServer: {
@@ -39,5 +49,6 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
+    historyApiFallback: true, // Redireciona todas as requisições para o index.html
   },
 };
