@@ -387,6 +387,171 @@
       ],
       "answerDetails": "Amazon AMI é o serviço da AWS que permite selecionar uma imagem de uma máquina pré-configurada para lançar uma instâncias EC2.",
       "correctAnswerIds": [3]
+    },
+    {
+      "content": "Qual serviço ou ferramenta complementar da AWS cria casos de negócios baseados em dados para planejamento de nuvem?",
+      "options": [
+        { "id": 1, "content": "Avaliador de migração (Migration Evaluator)" },
+        { "id": 2, "content": "Condutor de faturamento da AWS (AWS Billing Conductor)"},
+        { "id": 3, "content": "Console de faturamento da AWS (AWS Billing Console)"},
+        { "id": 4, "content": "Previsão da Forecast (Amazon Forecast)" }
+      ],
+      "answerDetails": "Avaliador de migração (Migration Evaluator) é o serviço ou ferramenta complementar da AWS que cria casos de negócios baseados em dados para planejamento de nuvem.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Você precisa migrar uma grande quantidade de dados do seu ambiente on-premise para armazenamento no S3 de forma automática e periódica, liberando a capacidade da sua infraestrutra particular. Qual servico que pode ser utilizado pra essa finalidade?",
+      "options": [
+        { "id": 1, "content": "AWS Direct Connect" },
+        { "id": 2, "content": "AWS Database Migration Service (AWS DMS)"},
+        { "id": 3, "content": "AWS Virtual Private Network (AWS VPN)"},
+        { "id": 4, "content": "AWS DataSync" }
+      ],
+      "answerDetails": "AWS DataSync é um serviço de transferência de dados on-line que simplifica, automatiza e acelera a transferência de dados entre sistemas de armazenamento local e o Amazon S3, Amazon Elastic File System (Amazon EFS) ou Amazon FSx for Windows File Server.",
+      "correctAnswerIds": [4]
+    },
+    {
+      "content": "Uma empresa de telecomunicações está procurando expandir sua obertura 5G em todo o país e, como resultado, precisa provisionar construir sua própria rede celular privada com a ajuda da AWS. Qual solução a AWS fornece para ajudar com isso?",
+      "options": [
+        { "id": 1, "content": "AWS Private 5G" },
+        { "id": 2, "content": "AWS Wavelength"},
+        { "id": 3, "content": "AWS Outposts"},
+        { "id": 4, "content": "AWS Direct Connect" }
+      ],
+      "answerDetails": "AWS Private 5G é um serviço que cria uma rede 5G privada. É isolado e não precisa de uma operadora.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Um aplicativo de computação de alto desempenho (HPC) herdado será migrado para a AWS. Qual tipo de adaptador de rede deve ser usado?",
+      "options": [
+        { "id": 1, "content": "Endereço IP elástico" },
+        { "id": 2, "content": "Elastic Network Adapter (ENA)"},
+        { "id": 3, "content": "Elastic Fabric Adapter/EFA"},
+        { "id": 4, "content": "Elastic Network Interface/ENI" }
+      ],
+      "answerDetails": "O Elastic Fabric Adapter é exclusivo para instâncias HPC. Já o Elastic Network Adapter é para até 100Gb, o Elastic network Interface é mais simples e para conexão interna, entre instâncias e, por último, o Endereço IP elástico é um IP físico.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Uma empresa deseja configurar uma conexão de rede segura do local para a Nuvem AWS em até 1 semana. Qual solução atenderá a esses requisitos?",
+      "options": [
+        { "id": 1, "content": "AWS Direct Connect" },
+        { "id": 2, "content": "AWS VPC"},
+        { "id": 3, "content": "AWS Site-to-Site VPN"},
+        { "id": 4, "content": "Edge location" }
+      ],
+      "answerDetails": "AWS Site-to-Site VPN é uma solução que permite configurar uma conexão de rede segura do local para a Nuvem AWS em até 1 semana. Já o AWS Direct Connect é caro e demora para liberar a rede privada (chega a demora meses para essa conexão acontecer). É uma conexão de rede dedicada, uma rede dedicada  pra você. O AWS VPC é uma rede privada virtual, onde você pode criar subredes, regras de firewall, etc. E Edge location é onde está o CloudFront, onde você pode fazer cache de conteúdo.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Uma empresa possui um requisito de conformidade para registrar e avaliar alterações de configuração, bem como realizar ações de remediação em recursos da AWS. Qual serviço da AWS a empresa deve usar?",
+      "options": [
+        { "id": 1, "content": "AWS Config" },
+        { "id": 2, "content": "AWS CloudTrail"},
+        { "id": 3, "content": "AWS Secrets Manager"},
+        { "id": 4, "content": "AWS Trusted Advisor" }
+      ],
+      "answerDetails": "AWS Config é um serviço que permite registrar e avaliar alterações de configuração, bem como realizar ações de remediação em recursos da AWS.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Uma empresa deseja usar uma solução de rede AWS que possa atuar como um gateway centralizado entre várias VPCs e redes locais. Qual serviço ou recurso da AWS atenderá a esse requisito?",
+      "options": [
+        { "id": 1, "content": "Gateway VPC endpoint" },
+        { "id": 2, "content": "AWS Transit Gateway"},
+        { "id": 3, "content": "AWS Direct Connect"},
+        { "id": 4, "content": "AWS PrivateLink" }
+      ],
+      "answerDetails": "AWS Transit Gateway é um serviço de rede que atua como um gateway centralizado entre várias VPCs e redes locais. Já o Gateway VPC endpoint é uma rede/comunicação privada entre serviços, sem passar pela rede pública. O AWS Direct Connect é uma conexão dedicada entre a sua rede e a AWS. E, por fim, o AWS PrivateLink é uma conexão privada entre serviços.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Qual é um benefício de usar um balanceador de carga Elastic Load Balancing (ELB) com aplicativos em execução na Nuvem AWS?",
+      "options": [
+        { "id": 1, "content": "O ELB escalonará automaticamente os recursos para atender às necessidades de capacidade." },
+        { "id": 2, "content": "O ELB pode balancear o tráfego entre vários recursos de computação"},
+        { "id": 3, "content": "O ELB pode abranger várias Regiões da AWS."},
+        { "id": 4, "content": "O ELB pode balancear o tráfego entre vários gateways de internet" }
+      ],
+      "answerDetails": "O ELB pode balancear o tráfego entre instâncias do EC2 (Elastic Compute Cloud). O ELB não escala automaticamente os recursos para atender às necessidades de capacidade (aumentar ou diminuir capacidade). Além disso, não é possível fazer o balanceamento entre Regiões da AWS, apenas com Route 53 é possível balancear entre regiões.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Qual serviço ou ferramenta da AWS uma empresa deve usar para solicitar e rastrear centralmente aumentos de limite de serviço?",
+      "options": [
+        { "id": 1, "content": "AWS Config" },
+        { "id": 2, "content": "Service Quotas"},
+        { "id": 3, "content": "Cost Explorer"},
+        { "id": 4, "content": "AWS Budgets" }
+      ],
+      "answerDetails": "Service Quotas é um serviço ou ferramenta da AWS que uma empresa deve usar para solicitar e rastrear centralmente aumentos de limite de serviço.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Você está procurando uma tecnologia de fila que suporte o protocolo MQTT, pois está migrando uma aplicação local para a AWS. Qual tecnologia você recomendaria usar?",
+      "options": [
+        { "id": 1, "content": "Amazon SQS (Simple Queue Service)" },
+        { "id": 2, "content": "Amazon SQS FIFO (First in, First out)"},
+        { "id": 3, "content": "Amazon MQ"},
+        { "id": 4, "content": "Amazon Kinesis" }
+      ],
+      "answerDetails": "Amazon MQ é um serviço de mensageria gerenciado que permite migrar do on-premise para nuvem e possui o protocolo MQTT. Amazon SQS, Amazon SQS FIFO e Amazon Kinesis são filas de mensagens, mas não suportam MQTT.",
+      "correctAnswerIds": [3]
+    },
+    {
+      "content": "Você é o responsável por criar os microsserviços do seu time e escolheu utilizar o ECS para conteneirizar o ambiente e a aplicação. Agora você deseja criar uma imagem e compartilhar com o seu time e com a organização. Qual é o serviço da AWS recomendado para registrar e compartilhar essa imagem?",
+      "options": [
+        { "id": 1, "content": "Amazon EC2 (Elastic Compute Cloud)" },
+        { "id": 2, "content": "Amazon ECR (Elastic Container Registry)"},
+        { "id": 3, "content": "Amazon ECS (Elastic Container Service)"},
+        { "id": 4, "content": "Amazon EKS (Elastic Kubernetes Service)" }
+      ],
+      "answerDetails": "Amazon ECR (Elastic Container Registry) é o serviço da AWS recomendado para registrar e compartilhar imagens de contêineres.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma empresa de mídia usa o Amazon Simple Storage Service (Amazon S3) para armazenar todos os seus dados. Qual classe de armazenamento ela deve considerar para armazenamento para otimização dos custos, levando em consideração que os dados têm padrões de acesso aleatório?",
+      "options": [
+        { "id": 1, "content": "Amazon S3 Standard (S3 Standard)" },
+        { "id": 2, "content": "Amazon S3 Intelligent-Tiering (S3 Intelligent-Tiering) "},
+        { "id": 3, "content": "Amazon S3 Standard-Infrequent Access (S3 Standard-IA)"},
+        { "id": 4, "content": "Amazon S3 Glacier" }
+      ],
+      "answerDetails": "A classe Intelligent-Tiering é recomendada para acessos aleatórios, onde não se sabe quando e com que frequência o arquivo será acessado. Essa classe não possui cobrancas por leitura e nem por mudança de classe dos objetos.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Uma startup em crescimento tem problemas para identificar e proteger dados sensíveis em escala. Qual serviço totalmente gerenciado da AWS pode ajudar com essa tarefa?",
+      "options": [
+        { "id": 1, "content": "AWS Key Management Service (AWS KMS)" },
+        { "id": 2, "content": "Amazon Macie"},
+        { "id": 3, "content": "AWS Secrets Manager"},
+        { "id": 4, "content": "AWS Artifact" }
+      ],
+      "answerDetails": "Amazon Macie é um serviço totalmente gerenciado da AWS que ajuda a identificar e proteger dados sensíveis em escala.",
+      "correctAnswerIds": [2]
+    },
+    {
+      "content": "Qual das seguintes afirmações está INCORRETA em relação ao Amazon EBS Elastic Volumes?",
+      "options": [
+        { "id": 1, "content": "Os volumes elásticos do Amazon EBS podem ser vinculados a várias zonas de disponibilidade (AZs)" },
+        { "id": 2, "content": "Os volumes elásticos do Amazon EBS podem ser montados em uma instância por vez"},
+        { "id": 3, "content": "Os volumes elásticos do Amazon EBS são vinculados a uma zona de disponibilidade (AZ) específica"},
+        { "id": 4, "content": "Os volumes elásticos do Amazon EBS podem persistir dados após seu término" }
+      ],
+      "answerDetails": "Um volume EBS pode ter dados persistidos independente do ciclo de vida da instância. Além disso, só pode ser anexado à apenas uma instância EC2 e está atrelado à uma AZ específica.",
+      "correctAnswerIds": [1]
+    },
+    {
+      "content": "Uma empresa gostaria de mover 50 petabytes (PBs) de dados de seus data centers locais para a AWS da maneira MAIS econômica. Como um Cloud Practitioner, qual das seguintes soluções você escolheria?",
+      "options": [
+        { "id": 1, "content": "AWS Snowball Edge" },
+        { "id": 2, "content": "AWS Snowmobile"},
+        { "id": 3, "content": "AWS Snowball"},
+        { "id": 4, "content": "AWS Storage Gateway" }
+      ],
+      "answerDetails": "O AWS Snowball é um dispositivo de transferência de dados portátil usado para mover grandes volumes de dados entre o local do cliente e a AWS. Sua capacidade é de até 80TB. Já o AWS Snowball Edge é uma versão mais avançada do Snowball, com capacidade de até 100 TB de armazenamento por dispositivo. Por fim, o AWS Snowmobile é um serviço de transporte físico de dados em grande escala, que utiliza um caminhão personalizado. Sua capacidade é de Até 100 PB (petabytes) por unidade.",
+      "correctAnswerIds": [2]
     }
   ],
   "tryAgain": false,
